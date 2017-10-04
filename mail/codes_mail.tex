@@ -1,6 +1,7 @@
 \documentclass{report}
 
-\usepackage{listings, color}
+\usepackage{listings, color, graphicx}
+\usepackage[spanish]{babel}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -26,9 +27,28 @@
 }
 
 \begin{document}
-\lstloadlanguages{java,xml}
+\begin{titlepage}
 
-MainActivity.java
+	\centering
+	\includegraphics[width=0.5\textwidth]{../images/ciateq.jpg}\par\vspace{1cm}
+	\vspace{1cm}
+	{\scshape\Large Pr\'{a}ctica de Android\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Env\'{i}o de correo electr\'{o}nico}\\
+	\vspace{2cm}
+	{\Large\itshape H. Edmundo Ram\'{i}rez\par}
+	\vfill
+	Profesor\par
+	\textsc{Mtro. Jayro Santiago Paz}
+	\vfill
+
+% Bottom of the page
+	{\large \date sOctubre 2017\par}
+\end{titlepage}
+
+\lstloadlanguages{java,xml}
+\chapter{C\'{o}digos}
+\section{MainActivity.java}
 \begin{lstlisting}[language=java]
 package sim.hecmundo.sendmail;
 
@@ -64,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 }
 \end{lstlisting}
 
-activity\_main.xml
+\section{activity\_main.xml}
 \begin{lstlisting}[language=xml]
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -106,7 +126,7 @@ activity\_main.xml
 </android.support.constraint.ConstraintLayout>
 \end{lstlisting}
 
-android\_manifest.xml
+\section{android\_manifest.xml}
 \begin{lstlisting}[language=xml]
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -130,5 +150,10 @@ android\_manifest.xml
 
 </manifest>
 \end{lstlisting}
+
+\chapter{Capturas de pantalla}
+\includegraphics[width=0.5\textwidth]{../images/mail_1.PNG}
+\includegraphics[width=0.5\textwidth]{../images/mail_2.PNG}
+\includegraphics[width=0.5\textwidth]{../images/mail_3.PNG}
 \end{document}
 

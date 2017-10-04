@@ -1,6 +1,7 @@
 \documentclass{report}
 
 \usepackage{listings, color, graphicx}
+\usepackage[spanish]{babel}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -43,10 +44,14 @@
 	\vfill
 
 % Bottom of the page
-	{\large \date sSeptiembre 2017\par}
+	{\large \date sOctubre 2017\par}
 \end{titlepage}
 
-MainActivity.java
+\section{Introducci\'{o}n}
+Esta pr\'{a}ctica muestra c\'{o}mo pasar parámetros entre actividades (o pantallas) de una aplicaci\'{o}n de Android
+
+\chapter{C\'{o}digos}
+\section{MainActivity.java}
 \begin{lstlisting}[language=java]
 package sim.hecmundo.passing_parameters;
 
@@ -228,5 +233,10 @@ activity\_main2.xml
 </android.support.constraint.ConstraintLayout>
 
 \end{lstlisting}
+
+\chapter{Im\'{a}genes}
+\includegraphics[width=0.5\textwidth]{../images/param_1.PNG}
+\includegraphics[width=0.5\textwidth]{../images/param_2.PNG}
+
 \end{document}
 
