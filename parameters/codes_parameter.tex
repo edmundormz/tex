@@ -1,11 +1,10 @@
 \documentclass{report}
 
-\usepackage{listings, color}
+\usepackage{listings, color, graphicx}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
-
 
 \lstset{
   frame=tb,
@@ -27,6 +26,25 @@
 
 \begin{document}
 \lstloadlanguages{java,xml}
+
+\begin{titlepage}
+
+	\centering
+	\includegraphics[width=0.5\textwidth]{../images/ciateq.jpg}\par\vspace{1cm}
+	\vspace{1cm}
+	{\scshape\Large Pr\'{a}ctica de Android\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Env\'{i}o de par\'{a}metros entre actividades\par}
+	\vspace{2cm}
+	{\Large\itshape H. Edmundo Ram\'{i}rez\par}
+	\vfill
+	Profesor\par
+	\textsc{Mtro. Jayro Santiago Paz}
+	\vfill
+
+% Bottom of the page
+	{\large \date sSeptiembre 2017\par}
+\end{titlepage}
 
 MainActivity.java
 \begin{lstlisting}[language=java]
